@@ -1,17 +1,21 @@
-<!-- 关于页 -->
+<!-- 编辑页 -->
 <template>
   <div class="em-con">
-    <image src="@/assets/bg.jpg"></image>
-    <el-card shadow="hover"> 我是关于 </el-card>
+    <MarkdownPro v-model="mdbook" />
   </div>
 </template>
 
 <script>
+import { MarkdownPro } from "vue-meditor";
 export default {
-  name: "about",
-  components: {},
+  name: "",
+  components: {
+    MarkdownPro,
+  },
   data() {
-    return {};
+    return {
+      mdbook: "# Hello XiaoJ",
+    };
   },
   computed: {},
   watch: {},
@@ -22,5 +26,4 @@ export default {
 </script>
 
 <style lang='less' scoped>
-//@import url();
 </style>

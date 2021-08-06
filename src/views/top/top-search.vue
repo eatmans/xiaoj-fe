@@ -1,17 +1,18 @@
-<!-- 关于页 -->
+<!-- 搜索 -->
 <template>
   <div class="em-con">
-    <image src="@/assets/bg.jpg"></image>
-    <el-card shadow="hover"> 我是关于 </el-card>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: "about",
+  name: "top-search",
   components: {},
   data() {
-    return {};
+    return {
+      input: "",
+    };
   },
   computed: {},
   watch: {},
